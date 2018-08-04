@@ -28,7 +28,7 @@ int main(){
 
 bool loneTeen(int x, int y){
     
-    int a;
+    int a=0;
     
     if(x>=13&&x<=19)
         a=1;
@@ -41,4 +41,6 @@ bool loneTeen(int x, int y){
     }
     else if(y>=13&&y<=19)
         return true;
+    
+    return false;
 }

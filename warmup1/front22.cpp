@@ -25,9 +25,6 @@ int main(){
     cout<<endl<<"string is :\n";
     puts(str);
     
-    for(len=0; str[len]!='\0'; ++len);
-    cout<<len;
-    
     return 0;
 }
 
@@ -93,7 +90,5 @@ void front22(char str[], int len){
         len+=2;
         str[len-2]=a;
         str[len-1]=b;
-        
-        cout<<len;
     }
 }

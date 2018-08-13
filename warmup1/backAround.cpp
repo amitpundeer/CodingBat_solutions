@@ -38,5 +38,6 @@ void backAround(char str[], int len)
     len+=1;
     
     str[len-1]=ch;
+    str[len]='\0';
     str[0]=ch;
 }

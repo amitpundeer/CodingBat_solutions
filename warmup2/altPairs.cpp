@@ -8,31 +8,28 @@
 using namespace std;
 
 main(){
-    char str1[20],str2[20];
-    void altPairs(char [], char []);
+    char str[20];
+    void altPairs(char []);
     
-    cin.getline(str1,20);
+    cin.getline(str,20);
     
-    altPairs(str1,str2);
+    altPairs(str);
     
-    puts(str2);
+    puts(str);
 }
 
-void altPairs(char str1[], char str2[]){
-    int len=0, i=0, k=0;
+void altPairs(char str[]){
+    int len=0, k=0, i=0;
     
-    for(; str1[len]!='\0'; ++len);
+    for(; str[len]!='\0'; ++len);
     
-    for(; i<=len;){
-        
-        str2[k]=str1[i];
+    for(; i<len;){
+        str[k]=str[i];
         ++k;
         ++i;
-        
-        if(i<len){
-            str2[k]=str1[i];
-            i+=3;
-            ++k;
-        }
+        str[k]=str[i];
+        ++k;
+        i+=3;
     }
+    str[k]='\0';
 }

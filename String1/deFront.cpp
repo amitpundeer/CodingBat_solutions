@@ -12,7 +12,7 @@ main(){
 	char str[10];
 	void deFront(char []);
 
-	cin.getline(str,20);
+	cin.getline(str,10);
 
 	deFront(str);
 
